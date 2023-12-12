@@ -36,6 +36,12 @@
           color: #7A7C80;
           text-decoration: none;
       }
+
+      .protrusion1, .protrusion2 {
+        width: 100px;
+        background-color: antiquewhite;
+        margin: 20px;
+      }
       /* section 1 */
       .section-1{
           padding-top: 40vh;
@@ -189,10 +195,22 @@
               padding-top: 2rem;
           }
       }
+
+      @media (max-width: 600px) {
+            /* Incorrect styles causing collision for smaller screens */
+            .protrusion1 {
+                margin-left: 50px; /* Intentionally causing collision */
+            }
+            .protrusion2 {
+                margin-left: -50px; /* Intentionally causing collision */
+            }
+        }
     </style>
     <title>Tasmia Zerin</title>
   </head>
   <body>
+    <button class="protrusion1">This button will protrude the viewport</button>
+    <button class="protrusion2">This button will protrude the viewport</button>
     <div class="grid-2">
       <div class="section-1">
         <i class="fas fa-code fa-5x white"></i>
@@ -238,10 +256,6 @@
         <p>tasmia.zerin.60@gmail.com</p>
         <button class="buttons" style="background-color: white;">Say me Hi</button>
         <button class="buttons">Close it</button>
-
-        <div class="overflowing-element">
-          This element intentionally overflows on smaller screens.
-        </div>
 
         <div class="cropped-element">
           This element will be cropped on smaller screens.
