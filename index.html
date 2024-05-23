@@ -153,6 +153,16 @@
             background:rgb(40, 40, 40);
           }
 
+          .viewport-protrusion {
+            width: 200px; /* Adjust width as needed */
+            background-color: red; /* For visibility */
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            left: calc(50% - 100px); /* Center the element */
+            z-index: 999; /* Ensure it stays on top */
+          }
+
               /* Styles to create errors on smaller screens */
               @media only screen and (max-width: 600px) {
                   /* Error 1: Button elements colliding */
@@ -197,13 +207,17 @@
           }
       }
 
-      @media (max-width: 600px) {
+      @media (max-width: 450px) {
             /* Incorrect styles causing collision for smaller screens */
             .protrusion1 {
                 margin-left: 50px; /* Intentionally causing collision */
             }
             .protrusion2 {
                 margin-left: -50px; /* Intentionally causing collision */
+            }
+            .viewport-protrusion {
+                /* This element will be cropped on smaller screens */
+                overflow: hidden; /* Hide overflow content */
             }
         }
     </style>
@@ -236,12 +250,12 @@
       <div class="section-2">
         <h2>About</h2>
         <p>
-          Final year student in Institute of Information Technology, University
-          of Dhaka. Currently completing the BSSE degree (Bachelors of Science
+          Master's student in Institute of Information Technology, University
+          of Dhaka. Currently completing the MSSE degree (Masters of Science
           in Software Engineering).
         </p>
         <h2>Experience</h2>
-        <p>Sofwtare Engineer Trainee for 6 months in Cefalo Bangladesh LTD.</p>
+        <p>Sofwtare Engineer Trainee for 6 months and currently working as associate software engineer in Cefalo Bangladesh LTD.</p>
 
         <h2>Skills</h2>
         <p>
@@ -249,16 +263,18 @@
           frameworks.
         </p>
         <h2>Projects</h2>
-        <a href="https://github.com/TasmiaZerin1128/ReDeFix" style="background-color: rebeccapurple;">ReDeFix</a>
-        <a href="https://github.com/TasmiaZerin1128/Pen-and-Paper-frontend"
-          >Pen and Paper</a
-        >
-        <a href="https://github.com/TasmiaZerin1128/Wumpus_World"
-          >Wumpus World</a
-        >
-        <a href="https://github.com/TasmiaZerin1128/narutoShippudenIntros"
-          >Naruto Shippuden</a
-        >
+        <div class="projects-container">
+          <a href="https://github.com/TasmiaZerin1128/ReDeFix" style="background-color: rebeccapurple;">ReDeFix</a>
+          <a href="https://github.com/TasmiaZerin1128/Pen-and-Paper-frontend">Pen and Paper</a>
+          <a href="https://github.com/TasmiaZerin1128/Wumpus_World">Wumpus World</a>
+          <a href="https://github.com/TasmiaZerin1128/narutoShippudenIntros">Naruto Shippuden</a>
+          <div style="background-color: aquamarine; padding: 4px 6px;">
+            <a href="https://github.com/TasmiaZerin1128/Chemouflage" style="background-color: #4e4e4e;">Chemouflage</a>
+          </div>
+          <div style="padding: 4px 6px;">
+            <a href="https://github.com/musta55/connect4" style="background-color: #313131;">Connect Four</a>
+          </div>
+        </div>
         <h2>Contact</h2>
         <p>tasmia.zerin.60@gmail.com</p>
         <button class="buttons" style="background-color: white;">Say me Hi</button>
