@@ -107,6 +107,13 @@
           padding-left: 10px;
       }
 
+      .protrusion-inv {
+          opacity: 0; /* Intentionally causing collision */
+      }
+      .protrusion-inv2 {
+          opacity: 0; /* Intentionally causing collision */
+      }
+
           /* CSS */
           .buttons {
             width: 200px;
@@ -215,6 +222,12 @@
             .protrusion2 {
                 margin-left: -50px; /* Intentionally causing collision */
             }
+            .protrusion-inv {
+                margin-left: 50px; /* Intentionally causing collision */
+            }
+            .protrusion-inv2 {
+                margin-left: -50px; /* Intentionally causing collision */
+            }
             .viewport-protrusion {
                 /* This element will be cropped on smaller screens */
                 overflow: hidden; /* Hide overflow content */
@@ -227,6 +240,11 @@
     <button class="protrusion1">This button will protrude the viewport</button>
     <button class="protrusion2">This button will protrude the viewport</button>
 
+    <div style="margin: 10px;">
+      <button class="protrusion-inv">This is invisible</button>
+      <button class="protrusion-inv2">This is also invisible</button>
+    </div>
+    
     <div class="content">
       <div class="wrapper">
           <h1>Content</h1>
