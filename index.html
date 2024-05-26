@@ -108,10 +108,16 @@
       }
 
       .protrusion-inv {
-          opacity: 0; /* Intentionally causing collision */
+          width: 200px;
+          color: transparent;
+          margin: 20px;
+          background-color: transparent; /* Intentionally causing collision */
       }
       .protrusion-inv2 {
-          opacity: 0; /* Intentionally causing collision */
+          width: 200px;
+          color: transparent;
+          margin: 20px;
+          background-color: transparent; /* Intentionally causing collision */
       }
 
           /* CSS */
@@ -240,9 +246,9 @@
     <button class="protrusion1">This button will protrude the viewport</button>
     <button class="protrusion2">This button will protrude the viewport</button>
 
-    <div style="margin: 10px;">
-      <button class="protrusion-inv">This is invisible</button>
-      <button class="protrusion-inv2">This is also invisible</button>
+    <div style="margin: 10px; display: flex; flex-direction: row;">
+      <div class="protrusion-inv">This is invisible</div>
+      <div class="protrusion-inv2">This is also invisible</div>
     </div>
     
     <div class="content">
