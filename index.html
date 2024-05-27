@@ -25,7 +25,7 @@
           font-family: 'Roboto', sans-serif;
           background-color: #101214;
           color: #7A7C80;
-
+          overflow-x: hidden;
       }
 
       h2,.white{
@@ -118,6 +118,15 @@
           color: #101214;
           margin: 20px;
           background-color: #101214; /* Intentionally causing collision */
+      }
+
+      .protruding-element {
+          width: 160%;
+          background-color: red;
+          color: white;
+          padding: 20px;
+          text-align: center;
+          font-size: 16px;
       }
 
           /* CSS */
@@ -245,6 +254,12 @@
   <body>
     <button class="protrusion1">This button will protrude the viewport</button>
     <button class="protrusion2">This button will protrude the viewport</button>
+
+    <div class="protruding-element">
+      <h4>
+        This is a protruding element.
+      </h4>
+    </div>
 
     <div style="margin: 10px; display: flex; flex-direction: row;">
       <div class="protrusion-inv">This is invisible</div>
