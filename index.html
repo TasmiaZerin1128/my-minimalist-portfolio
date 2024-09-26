@@ -42,6 +42,47 @@
         background-color: antiquewhite;
         margin: 20px;
       }
+
+      .protruding-container {
+          width: 40%;
+          background-color: #fff;
+          margin-top: 4rem;
+      }
+
+      .flex-container {
+          display: inline-flex;
+      }
+      .box {
+          padding: 1rem;
+          margin: 0.5rem;
+          background-color: #d6bcfa; /* Equivalent to bg-purple-300 */
+      }
+
+            
+      .features-area .features .item a {
+        display: block;
+        padding: 50px 30px;
+        box-shadow: 0 10px 10px 10px #cccccc;
+        background: #ffffff;
+        transition: all 0.5s ease;
+      }
+
+      .date {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        min-width: 75px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        margin-top: -3px;
+      }
+
+      .info-box {
+        padding: 30px;
+        display: block;
+        text-align: center;
+        background-color: white;
+      }
       /* section 1 */
       .section-1{
           padding-top: 40vh;
@@ -68,6 +109,7 @@
           padding-top: 10vh;
           width: 70%;
           background-color: #313131;
+          display: inline-block;
       }
 
       .section-2 h2{
@@ -127,6 +169,10 @@
           padding: 20px;
           text-align: center;
           font-size: 16px;
+      }
+
+      .color-only {
+        background-color: rosybrown;
       }
 
           /* CSS */
@@ -265,6 +311,71 @@
       <div class="protrusion-inv">This is invisible</div>
       <div class="protrusion-inv2">This is also invisible</div>
     </div>
+
+    <div class="features-area bottom-less" bis_skin_checked="1">
+      <div class="container" bis_skin_checked="1">
+          <div class="row" bis_skin_checked="1">
+              <div class="features" style="display:flex" bis_skin_checked="1">
+                  <div style="text-align: center ; height: 320px" data-aos="fade-left" class="equal-height col-md-4 col-sm-6 aos-init aos-animate" bis_skin_checked="1">
+                      <div class="item mariner" bis_skin_checked="1">
+                          <a href="https://du.ac.bd/leadership/provcp" bis_skin_checked="1">
+                              <div style="height: 220px; background-color: #74992e" class="info" bis_skin_checked="1">
+                                  <p>
+                                      <img src="https://ssl.du.ac.bd/fontView/images/leader/1725617523padmin.jpg" height="200" width="160" alt="Pro Vice Chancellor" srcset="" />
+                                  </p>
+                                  <p style="font-weight: bold; font-size: 14px">
+                                      Professor Dr. Sayema Haque Bidisha
+                                  </p>
+                                  <h5 style="font-weight: bold">Pro Vice Chancellor (Administration)</h5>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+                  <div style="text-align: center; height: 320px" data-aos="fade-left" class="equal-height col-md-4 col-sm-6 aos-init aos-animate" bis_skin_checked="1">
+                      <div class="item mariner" bis_skin_checked="1">
+                          <a href="https://du.ac.bd/leadership/provca" bis_skin_checked="1">
+                              <div style="height: 220px" class="info" bis_skin_checked="1">
+                                  <p>
+                                      <img src="https://ssl.du.ac.bd/fontView/images/leader/1726136807bch_evdrcpb.jpg" height="200" width="160" alt=" Vice Chancellor" srcset="" />
+
+                                  </p>
+                                  <p style="font-weight: bold; font-size: 14px">
+                                      Professor Dr. Mamun Ahmed
+                                  </p>
+                                  <h5 style="font-weight: bold">Pro Vice Chancellor (Academic)</h5>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+                  <div style="text-align: center; height: 320px" data-aos="fade-left" class="equal-height col-md-4 col-sm-6 aos-init aos-animate" bis_skin_checked="1">
+                      <div class="item mariner" bis_skin_checked="1">
+                          <a href="https://du.ac.bd/leadership/treasurer" bis_skin_checked="1">
+                              <div style="height: 220px" class="info" bis_skin_checked="1">
+                                  <p>
+                                      <img src="https://ssl.du.ac.bd/fontView/images/leader/1725183043IMG-20240901-WA0003.jpg" height="170" width="166" alt=" Vice Chancellor" srcset="" />
+
+                                  </p>
+                                  <p style="font-weight: bold; font-size: 14px">
+                                      Professor Dr. M. Jahangir Alam Chowdhury
+                                  </p>
+                                  <h5 style="font-weight: bold;">Treasurer</h5>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="protruding-container">
+      <h1>I don't know what is happening but I know I can make it let's see whathappenshere</h1>
+      <div class="flex-container">
+          <div class="box">This is one box</div>
+          <div class="box">This is two box</div>
+          <div class="box">This is three box</div>
+      </div>
+    </div>
     
     <div class="content">
       <div class="wrapper">
@@ -303,10 +414,11 @@
         </p>
         <h2>Projects</h2>
         <div class="projects-container">
-          <a href="https://github.com/TasmiaZerin1128/ReDeFix">ReDeFix</a>
-          <a href="https://github.com/TasmiaZerin1128/Pen-and-Paper-frontend" style="background-color: rebeccapurple;">Pen and Paper</a>
-          <a href="https://github.com/TasmiaZerin1128/Wumpus_World" style="background-color: #313131;">Wumpus World</a>
-          <!-- <a href="https://github.com/TasmiaZerin1128/narutoShippudenIntros">Naruto Shippuden</a>
+          <!-- fix 1st a by changing width and padding -->
+          <a href="https://github.com/TasmiaZerin1128/ReDeFix" class="color-only" style="background-color: rebeccapurple; width: 100%; padding: 5px 0">ReDeFix</a> 
+          <a href="https://github.com/TasmiaZerin1128/Pen-and-Paper-frontend">Pen and Paper</a>
+          <a href="https://github.com/TasmiaZerin1128/Wumpus_World">Wumpus World</a>
+          <a href="https://github.com/TasmiaZerin1128/narutoShippudenIntros">Naruto Shippuden</a>
           <div style="background-color: aquamarine; padding: 4px 6px;">
             <a href="https://github.com/TasmiaZerin1128/Chemouflage" style="background-color: #4e4e4e;">Chemouflage</a>
           </div>
